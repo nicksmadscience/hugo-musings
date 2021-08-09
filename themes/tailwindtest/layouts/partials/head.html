@@ -1,5 +1,7 @@
 <head>
     {{ $styles := resources.Get "css/styles.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 
 </head>
